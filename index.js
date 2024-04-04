@@ -5,7 +5,7 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-mongoose.connect(process.env.DB_URL);
+mongoose.connect("mongodb+srv://murkutkaraniket:aniket1812@cluster0.fupvoqn.mongodb.net/exercise_tracker?retryWrites=true&w=majority&appName=Cluster0");
 
 const UserSchema = new Schema({
   username: String,
